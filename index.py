@@ -29,13 +29,21 @@ class Cal:
         elif self.user=="0":
             self.que = input("Do you really want to quit? yes/no - ")
             if self.que=="yes":
-                self.exit()
-            else:
+                sys.exit()
+            elif self.que=="no":
                 self.menu()
         else:
             print("input do not match any of the options, try again")
             self.menu()
         
+    def add(self):
+        pass
+    def subtract(self):
+        pass
+    def multiply(self):
+        pass
+    def divide(self):
+        pass
         
 
 calculator = Cal()
