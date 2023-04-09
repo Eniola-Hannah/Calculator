@@ -43,7 +43,7 @@ class Cal:
         self.evalu = eval(input("""
         Input your expression for it to be evaluated:
             """))
-        print("here is your evaluations " + str(self.evalu))
+        print("here is your answer " + str(self.evalu))
         
         self.que2 = input("do you wish to perform any operations again? yes/no ")
         if self.que2=="yes":
@@ -56,7 +56,7 @@ class Cal:
         self.a = input("first Value - ")
         self.b = input("Second Value - ")
         self.sol = int(self.a) + int(self.b)
-        print("here is your evaluations - " + str(self.sol))
+        print("here is your answer - " + str(self.sol))
         
         self.que3 = input("do you wish to perform any operations again? yes/no ")
         if self.que3=="yes":
@@ -69,7 +69,7 @@ class Cal:
         self.c = input("first Value: ")
         self.d = input("Second Value: ")
         self.ans = int(self.c) - int(self.d)
-        print("here is your evaluations - " + str(self.ans))
+        print("here is your answer - " + str(self.ans))
         
         self.que4 = input("do you wish to perform any operations again? yes/no ")
         if self.que4=="yes":
@@ -79,7 +79,18 @@ class Cal:
     
     
     def multiply(self):
-        pass
+        self.e = input("first Value: ")
+        self.f = input("Second Value: ")
+        self.solution = int(self.e) * int(self.f)
+        print("here is your answer - " + str(self.solution))
+        
+        self.que5 = input("do you wish to perform any operations again? yes/no ")
+        if self.que5=="yes":
+            self.menu()
+        elif self.que5=="no":
+            sys.exit()
+            
+            
     def divide(self):
         pass
         
