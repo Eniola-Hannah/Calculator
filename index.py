@@ -3,7 +3,7 @@ import time
 
 class Cal:
     def __init__(self):
-        print("Welcome to Ana's calculator \n here, ur input will be evaluated correctly")
+        print("Welcome to Ana's calculator \nHere, ur input will be evaluated correctly")
         time.sleep(1)
         self.menu()
 
@@ -22,10 +22,12 @@ class Cal:
         if self.user=="1":
             self.random()
         elif self.user=="2":
-            self.subtract()
+            self.add()
         elif self.user=="3":
-            self.multiply()
+            self.subtract()
         elif self.user=="4":
+            self.multiply()
+        elif self.user=="5":
             self.divide()
         elif self.user=="0":
             self.que = input("Do you really want to quit? yes/no - ")
@@ -39,18 +41,28 @@ class Cal:
         
     def random(self):
         self.evalu = eval(input("""
-                                Input your expression for it to be evaluated:
-                    """))
-        print("here is your evaluations " + self.evalu)
-        que2 = input("do you wish to perform any operations again? yes/no ")
-            if self.que=="yes":
-                self.menu()
-            elif self.que=="no":
-                sys.exit()
+        Input your expression for it to be evaluated:
+            """))
+        print("here is your evaluations " + str(self.evalu))
+        
+        self.que2 = input("do you wish to perform any operations again? yes/no ")
+        if self.que2=="yes":
+            self.menu()
+        elif self.que2=="no":
+            sys.exit()
         
         
     def add(self):
-        pass
+        self.a = input("first Value - ")
+        self.b = input("Second Value - ")
+        self.sol = int(self.a) + int(self.b)
+        print("here is your evaluations " + str(self.sol))
+        
+        self.que3 = input("do you wish to perform any operations again? yes/no ")
+        if self.que3=="yes":
+            self.menu()
+        elif self.que3=="no":
+            sys.exit()
         
     def subtract(self):
         pass
