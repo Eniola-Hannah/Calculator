@@ -56,16 +56,28 @@ class Cal:
         self.a = input("first Value - ")
         self.b = input("Second Value - ")
         self.sol = int(self.a) + int(self.b)
-        print("here is your evaluations " + str(self.sol))
+        print("here is your evaluations - " + str(self.sol))
         
         self.que3 = input("do you wish to perform any operations again? yes/no ")
         if self.que3=="yes":
             self.menu()
         elif self.que3=="no":
             sys.exit()
+      
         
     def subtract(self):
-        pass
+        self.c = input("first Value: ")
+        self.d = input("Second Value: ")
+        self.ans = int(self.c) - int(self.d)
+        print("here is your evaluations - " + str(self.ans))
+        
+        self.que4 = input("do you wish to perform any operations again? yes/no ")
+        if self.que4=="yes":
+            self.menu()
+        elif self.que4=="no":
+            sys.exit()
+    
+    
     def multiply(self):
         pass
     def divide(self):
