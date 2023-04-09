@@ -11,15 +11,16 @@ class Cal:
         self.user = input("""
                 kindly choose your operands
                 
-                    1. Addition
-                    2. Subtraction
-                    3. Multiplication
-                    4. Division
+                    1. Random Calculation
+                    2. Addition
+                    3. Subtraction
+                    4. Multiplication
+                    5. Division
                     0. Quit
         """)
         
         if self.user=="1":
-            self.add()
+            self.random()
         elif self.user=="2":
             self.subtract()
         elif self.user=="3":
@@ -36,8 +37,21 @@ class Cal:
             print("input do not match any of the options, try again")
             self.menu()
         
+    def random(self):
+        self.evalu = eval(input("""
+                                Input your expression for it to be evaluated:
+                    """))
+        print("here is your evaluations " + self.evalu)
+        que2 = input("do you wish to perform any operations again? yes/no ")
+            if self.que=="yes":
+                self.menu()
+            elif self.que=="no":
+                sys.exit()
+        
+        
     def add(self):
         pass
+        
     def subtract(self):
         pass
     def multiply(self):
