@@ -19,16 +19,16 @@ class Cal:
         """)
         
         if self.user=="1":
-            add()
+            self.add()
         elif self.user=="2":
-            subtract()
+            self.subtract()
         elif self.user=="3":
-            multiply()
+            self.multiply()
         elif self.user=="4":
-            divide()
+            self.divide()
         elif self.user=="0":
             self.que = input("Do you really want to quit? yes/no - ")
-            if que=="yes":
+            if self.que=="yes":
                 self.exit()
             else:
                 self.menu()
