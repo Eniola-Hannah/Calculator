@@ -7,8 +7,8 @@ class Cal:
         time.sleep(1)
         self.menu()
 
-    def menu():
-        user = input("""
+    def menu(self):
+        self.user = input("""
                 kindly choose your operands
                 
                     1. Addition
@@ -17,3 +17,25 @@ class Cal:
                     4. Division
                     0. Quit
         """)
+        
+        if self.user=="1":
+            add()
+        elif self.user=="2":
+            subtract()
+        elif self.user=="3":
+            multiply()
+        elif self.user=="4":
+            divide()
+        elif self.user=="0":
+            self.que = input("Do you really want to quit? yes/no - ")
+            if que=="yes":
+                self.exit()
+            else:
+                self.menu()
+        else:
+            print("input do not match any of the options, try again")
+            self.menu()
+        
+        
+        
+    
