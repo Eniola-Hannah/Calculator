@@ -37,5 +37,6 @@ class Cal:
             self.menu()
         
         
-        
+
+calculator = Cal()
     
