@@ -45,10 +45,10 @@ class Cal:
             """))
         print("here is your answer " + str(self.evalu))
         
-        self.que2 = input("do you wish to perform any operations again? yes/no ")
-        if self.que2=="yes":
+        self.que1 = input("do you wish to perform any operations again? yes/no ")
+        if self.que1=="yes":
             self.menu()
-        elif self.que2=="no":
+        elif self.que1=="no":
             sys.exit()
         
         
@@ -58,10 +58,10 @@ class Cal:
         self.sol = int(self.a) + int(self.b)
         print("here is your answer - " + str(self.sol))
         
-        self.que3 = input("do you wish to perform any operations again? yes/no ")
-        if self.que3=="yes":
+        self.que2 = input("do you wish to perform any operations again? yes/no ")
+        if self.que2=="yes":
             self.menu()
-        elif self.que3=="no":
+        elif self.que2=="no":
             sys.exit()
       
         
@@ -71,10 +71,10 @@ class Cal:
         self.ans = int(self.c) - int(self.d)
         print("here is your answer - " + str(self.ans))
         
-        self.que4 = input("do you wish to perform any operations again? yes/no ")
-        if self.que4=="yes":
+        self.que3 = input("do you wish to perform any operations again? yes/no ")
+        if self.que3=="yes":
             self.menu()
-        elif self.que4=="no":
+        elif self.que3=="no":
             sys.exit()
     
     
@@ -84,15 +84,24 @@ class Cal:
         self.solution = int(self.e) * int(self.f)
         print("here is your answer - " + str(self.solution))
         
+        self.que4 = input("do you wish to perform any operations again? yes/no ")
+        if self.que4=="yes":
+            self.menu()
+        elif self.que4=="no":
+            sys.exit()
+            
+            
+    def divide(self):
+        self.g = input("first Value: ")
+        self.h = input("Second Value: ")
+        self.answer = int(self.g) / int(self.h)
+        print("here is your answer - " + str(self.answer))
+        
         self.que5 = input("do you wish to perform any operations again? yes/no ")
         if self.que5=="yes":
             self.menu()
         elif self.que5=="no":
             sys.exit()
-            
-            
-    def divide(self):
-        pass
         
 
 calculator = Cal()
